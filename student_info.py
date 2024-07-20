@@ -1,7 +1,7 @@
 def enter_data():
     name = input("Enter student name: ")
     rollno = input("Enter roll number: ")
-    marks = input("Enter marks: ")                    
+    marks = input("Enter marks: ")
     return name, rollno, marks
 
 def write_data(data):
@@ -38,12 +38,12 @@ def display_data():
         for line in file:
             data = line.strip().split('|')
             if len(data) >= 3:
-                print("%-15s%-15s%-15s" % (data[0], data[1], data[2]))
+                print(data[0],"\t",data[1],"\t",data[2])
             else:
                 print("Invalid data format in file.")
 
 while True:
-    choice = input("Enter choice\n1: Add\n2: Read\n3: Search\n4: Update\n5: Delete\n6: Exit\n")
+    choice = input("Enter choice\n1: Add the Student ID\n2: Read the Information\n3: Search the Student ID\n4: Update the Data\n5: Delete the Data\n6: Exit\n")
     if choice == "1":
        data = enter_data()
        write_data(data)

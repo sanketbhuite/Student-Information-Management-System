@@ -1,7 +1,7 @@
 def enter_data():
-    name = input("Enter student name: ")
-    rollno = input("Enter roll number: ")
-    marks = input("Enter marks: ")
+    name = input("Enter the student name: ")
+    rollno = input("Enter the roll number: ")
+    marks = input("Enter the marks: ")
     return name, rollno, marks
 
 def write_data(data):
